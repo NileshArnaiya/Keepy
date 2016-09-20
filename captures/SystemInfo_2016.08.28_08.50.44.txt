@@ -1,0 +1,83 @@
+Applications Graphics Acceleration Info:
+Uptime: 88864982 Realtime: 211925689
+
+** Graphics info for pid 2972 [com.keepy.saver] **
+
+Recent DisplayList operations
+DrawPatch
+DrawRect
+DrawDisplayList
+  Save
+  ClipRect
+  DrawDisplayList
+    DrawDisplayList
+      DrawDisplayList
+        DrawDisplayList
+          DrawDisplayList
+            DrawDisplayList
+              DrawDisplayList
+              DrawDisplayList
+                DrawDisplayList
+                  DrawOval
+                  DrawOval
+                  SetupShader
+                  DrawCircle
+                  ResetShader
+                DrawDisplayList
+                DrawDisplayList
+                  DrawOval
+                  DrawOval
+                  SetupShader
+                  DrawCircle
+                  ResetShader
+                DrawDisplayList
+                DrawDisplayList
+                  DrawOval
+                  DrawOval
+                  SetupShader
+                  DrawCircle
+                  ResetShader
+                DrawDisplayList
+        DrawPatch
+      DrawDisplayList
+      DrawPatch
+  RestoreToCount
+DrawRect
+DrawOval
+DrawOval
+DrawCircle
+DrawOval
+DrawOval
+DrawCircle
+DrawOval
+DrawOval
+DrawCircle
+DrawPatch
+DrawPatch
+
+Caches:
+Current memory usage / total memory usage (bytes):
+  TextureCache          5020900 / 25165824
+  LayerCache                  0 / 16777216
+  RenderBufferCache           0 /  2097152
+  GradientCache               0 /   524288
+  PathCache                   0 / 10485760
+  TextDropShadowCache         0 /  2097152
+  PatchCache               1984 /   131072
+  FontRenderer 0 A8      524288 /   524288
+  FontRenderer 0 RGBA         0 /        0
+  FontRenderer 0 total   524288 /   524288
+Other:
+  FboCache                    0 /       16
+Total memory usage:
+  5547172 bytes, 5.29 MB
+
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0.00 kB
+

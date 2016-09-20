@@ -1,0 +1,74 @@
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+		android:title="Saving Options">
+
+        <ListPreference
+			android:key="user_agent"
+			android:title="User agent"
+			android:defaultValue="mobile"
+			android:summary="Choose whether to save the desktop or mobile version of webpage"
+			android:entries="@array/entries_list_preference"
+			android:entryValues="@array/entryvalues_list_preference"
+			android:dialogTitle="Choose" />
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="Storage">
+		<CheckBoxPreference
+            android:key = "is_custom_storage_dir"
+            android:defaultValue="false"
+            android:title="Custom file storage folder"
+            android:text="Enable if you want to store files in a custom location" />
+
+		<EditTextPreference
+			android:key="custom_storage_dir"
+            android:defaultValue="/sdcard/keepy-pages/"
+			android:title="Custom storage location" 
+			android:summary="Enter the directory path where you want data to be saved. If it does not exist, it will be created." 
+			android:dialogTitle="Enter directory path (eg. /sdcard/keepy-pages/ )"/>
+
+    </PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="Appearance">
+
+		<ListPreference
+			android:key="layout"
+			android:title="Layout for saved pages list"
+			android:defaultValue="1"
+			android:summary="Choose what the list of saved pages should look like, with various choices for list or grid"
+			android:entries="@array/layout_list"
+			android:entryValues="@array/layout_list_values"
+			android:dialogTitle="Choose" />
+
+		<SwitchPreference 
+			android:key="dark_mode" 
+			android:defaultValue="false"
+			android:switchTextOn="On"
+			android:switchTextOff="Off"
+			android:title="Night mode" 
+			android:summary="Use a dark theme, and also use inverted rendering in the viewer (Black becomes white and vice versa). May require app restart to take effect."/>
+
+		<SwitchPreference
+			android:key="default_htmlviewer"
+			android:defaultValue="false"
+			android:switchTextOn="On"
+			android:switchTextOff="Off"
+			android:title="Default html viewer"
+			android:summary="Open page with other application"/>
+
+    </PreferenceCategory>
+
+
+
+
+
+
+</PreferenceScreen>
+
+
+
+
+

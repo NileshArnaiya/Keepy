@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/mainLayout"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <!-- Email Label -->
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/email"
+            android:textSize="20sp"
+
+
+
+            android:textColor="#000"
+
+            android:textColorHint="#000"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+
+             />
+
+        <!-- Password Label -->
+        <EditText  android:id="@+id/pass"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textColorHint="#000"
+
+
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+           />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/createtb"
+android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:drawableRight="@drawable/showcar"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+
+            android:background="#0B3142"
+
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:text="Save"/>
+            <Button
+                android:id="@+id/gettb"
+android:layout_weight="1"
+                android:textAllCaps="false"
+                android:drawableRight="@drawable/savekar"
+                android:textColor="#fff"
+                android:background="#2f9304"
+
+                android:layout_width="match_parent"
+                android:layout_marginBottom="24dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textSize="20sp"
+
+                android:padding="12dp"
+
+                android:text="Show"/>
+        </LinearLayout>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/deletedb"
+            android:textColor="#fff"
+            android:text="Delete All"
+            app:bootstrapBrand ="danger"
+            android:drawableBottom="@drawable/deletegar"
+            android:background="#7F7F7F"
+            android:layout_marginBottom="24dp"
+            app:bootstrapSize="lg"
+            />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/display"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/deletedb"
+            android:layout_marginTop="8dp"
+            android:background="#879ba7"
+            android:fitsSystemWindows="true"
+            android:maxLines="16"
+            android:scrollbars="vertical"
+            android:textColor="#ffffffff"
+            />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,126 @@
+AGGREGATED OVER LAST 24 HOURS:
+Per-Package Stats:
+  * com.keepy.saver / u0a178:
+      * com.keepy.saver / u0a178:
+               TOTAL: 86% (7.9MB-46MB-107MB/7.1MB-43MB-94MB over 122)
+                 Top: 12% (16MB-46MB-107MB/15MB-41MB-94MB over 65)
+              Imp Fg: 65% (19MB-49MB-77MB/17MB-47MB-65MB over 51)
+             Service: 9.0% (7.9MB-28MB-47MB/7.1MB-24MB-41MB over 6)
+          Service Rs: 0.01%
+            Receiver: 0.00%
+            (Cached): 9.1% (26MB-34MB-62MB/24MB-30MB-54MB over 12)
+      * org.twinone.locker.lock.AppLockService:
+        Process: com.keepy.saver
+            Running count 77 / time 86%
+            Started count 77 / time 86%
+          Executing count 82395 / time 0.89%
+      * org.twinone.locker.lock.HelperService:
+        Process: com.keepy.saver
+            Running count 26 / time 0.01%
+            Started count 26 / time 0.00%
+          Executing count 26 / time 0.01%
+      * org.twinone.locker.lock.LockService:
+        Process: com.keepy.saver
+            Running count 43 / time 3.9%
+            Started count 41 / time 3.9%
+          Executing count 72 / time 0.04%
+
+Summary:
+  * com.keepy.saver / u0a178:
+           TOTAL: 86% (7.9MB-46MB-107MB/7.1MB-43MB-94MB over 122)
+             Top: 12% (16MB-46MB-107MB/15MB-41MB-94MB over 65)
+          Imp Fg: 65% (19MB-49MB-77MB/17MB-47MB-65MB over 51)
+         Service: 9.0% (7.9MB-28MB-47MB/7.1MB-24MB-41MB over 6)
+      Service Rs: 0.01%
+        Receiver: 0.00%
+        (Cached): 9.1% (26MB-34MB-62MB/24MB-30MB-54MB over 12)
+
+Run time Stats:
+  SOff/Norm: +5h25m29s761ms
+  SOn /Norm: +6h41m20s907ms
+      TOTAL: +12h6m50s668ms
+
+          Start time: 2016-08-27 07:58:21
+  Total elapsed time: +1d0h52m3s914ms (partial) libdvm.so chromeview
+
+AGGREGATED OVER LAST 3 HOURS:
+Per-Package Stats:
+  * com.keepy.saver / u0a178:
+      * com.keepy.saver / u0a178:
+               TOTAL: 100% (39MB-64MB-107MB/32MB-60MB-94MB over 32)
+                 Top: 8.7% (39MB-86MB-107MB/32MB-74MB-94MB over 8)
+              Imp Fg: 91% (52MB-57MB-77MB/49MB-55MB-65MB over 24)
+             Service: 0.29%
+          Service Rs: 0.01%
+      * org.twinone.locker.lock.AppLockService:
+        Process: com.keepy.saver
+            Running count 5 / time 100%
+            Started count 5 / time 100%
+          Executing count 12697 / time 0.55%
+      * org.twinone.locker.lock.HelperService:
+        Process: com.keepy.saver
+            Running count 1 / time 0.00%
+            Started count 1 / time 0.00%
+          Executing count 1 / time 0.00%
+      * org.twinone.locker.lock.LockService:
+        Process: com.keepy.saver
+            Running count 5 / time 0.17%
+            Started count 5 / time 0.16%
+          Executing count 10 / time 0.02%
+
+Summary:
+  * com.keepy.saver / u0a178:
+           TOTAL: 100% (39MB-64MB-107MB/32MB-60MB-94MB over 32)
+             Top: 8.7% (39MB-86MB-107MB/32MB-74MB-94MB over 8)
+          Imp Fg: 91% (52MB-57MB-77MB/49MB-55MB-65MB over 24)
+         Service: 0.29%
+      Service Rs: 0.01%
+
+Run time Stats:
+  SOff/Norm: +1h40m35s148ms
+  SOn /Norm: +52m0s357ms
+      TOTAL: +2h32m35s505ms
+
+          Start time: 2016-08-27 22:27:16
+  Total elapsed time: +10h23m14s63ms (partial) libdvm.so chromeview
+
+CURRENT STATS:
+Per-Package Stats:
+  * com.keepy.saver / u0a178:
+      * com.keepy.saver / u0a178:
+               TOTAL: 100% (39MB-74MB-107MB/32MB-66MB-94MB over 14)
+                 Top: 42% (39MB-86MB-107MB/32MB-74MB-94MB over 8)
+              Imp Fg: 58% (52MB-58MB-77MB/49MB-55MB-65MB over 6)
+             Service: 0.36%
+          Service Rs: 0.04%
+      * org.twinone.locker.lock.AppLockService:
+        Process: com.keepy.saver
+            Running count 4 / time 100%
+            Started count 4 / time 100%
+          Executing count 6307 / time 1.5%
+      * org.twinone.locker.lock.HelperService:
+        Process: com.keepy.saver
+            Running count 1 / time 0.01%
+            Started count 1 / time 0.01%
+          Executing count 1 / time 0.01%
+      * org.twinone.locker.lock.LockService:
+        Process: com.keepy.saver
+            Running count 5 / time 0.83%
+            Started count 5 / time 0.77%
+          Executing count 10 / time 0.09%
+
+Summary:
+  * com.keepy.saver / u0a178:
+           TOTAL: 100% (39MB-74MB-107MB/32MB-66MB-94MB over 14)
+             Top: 42% (39MB-86MB-107MB/32MB-74MB-94MB over 8)
+          Imp Fg: 58% (52MB-58MB-77MB/49MB-55MB-65MB over 6)
+         Service: 0.36%
+      Service Rs: 0.04%
+
+Run time Stats:
+  SOff/Norm: +5m45s61ms
+  SOn /Norm: +26m9s305ms (running)
+      TOTAL: +31m54s366ms
+
+          Start time: 2016-08-28 07:24:28
+  Total elapsed time: +1h26m2s337ms (partial) libdvm.so chromeview

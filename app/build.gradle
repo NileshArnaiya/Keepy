@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    useLibrary 'org.apache.http.legacy'
+
+
+
+    defaultConfig {
+        applicationId "com.keepy.saver"
+        minSdkVersion 14
+        targetSdkVersion 24
+        versionCode 6
+        multiDexEnabled true
+        versionName "1.0"
+        generatedDensities = []
+
+    }
+
+    aaptOptions {
+        additionalParameters "--no-version-vectors"
+    }
+
+
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+
+        }
+    }
+    productFlavors {
+        google {
+            manifestPlaceholders = [PLAY_VERSION: "@integer/google_play_services_version"]
+        }
+        fdroid {
+            manifestPlaceholders = [PLAY_VERSION: "0"]
+        }
+    }
+    sourceSets {
+        google {
+            java.srcDirs = ['src/google/java']
+        }
+        fdroid {
+            java.srcDirs = ['src/fdroid/java']
+        }
+    }
+
+}
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.code.gson:gson:2.3'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.beardedhen:androidbootstrap:2.3.0'
+    compile 'com.google.android.gms:play-services-base:8.4.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.github.paolorotolo:appintro:4.0.0'
+    compile 'com.android.support:design:23.0.1'
+    compile 'com.github.lzyzsd:circleprogress:1.1.0@aar'
+    compile 'com.mostafagazar:customshapeimageview:1.0.4'
+    compile 'com.kobakei:ratethisapp:0.0.7'
+    compile 'com.vstechlab.easyfonts:easyfonts:1.0.0'
+    compile 'com.github.pro100svitlo:lockpattern:0.9.3'
+    compile 'org.jsoup:jsoup:1.8.3'
+    compile 'com.squareup.okhttp:okhttp:2.7.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+}
+
+
+
+
+
+
+

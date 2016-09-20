@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="jonas.tool.saveForOffline"
+    android:hardwareAccelerated="true"
+    android:installLocation="auto"
+    android:versionCode="3"
+    android:versionName="1.0">
+
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="24"
+
+        tools:overrideLibrary="com.pro100svitlo.lockpattern"/>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.usb.accessory"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
+
+    <!-- v1.0.0 -->
+
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- v2.1.0 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 2.1.2 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <!-- Draw over other apps -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 2303 -->
+    <!-- Take pictures of intruder -->
+    <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <!--  -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Keepy"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        tools:replace="label">
+
+        <!-- For goole play services -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="${PLAY_VERSION}"
+            tools:replace="android:value" />
+
+        <!-- No history causes background change not working (because of startActivityForResult() -->
+        <activity
+            android:name="org.twinone.locker.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <activity
+            android:name="org.twinone.locker.MainActivity2"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_edit_notes_activity"
+            android:theme="@style/AppTheme11" />
+        <activity
+            android:name="org.twinone.locker.EditActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Locker"
+            android:theme="@style/AppTheme11">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.twinone.locker.MainActivity2" />
+        </activity>
+        <activity
+            android:name="org.twinone.locker.google"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="org.twinone.locker.BankAccounts"
+            android:label="Bank"
+            android:largeHeap="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="org.twinone.locker.MainScreen"
+            android:label="Social"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.twinone.locker.PasswordGenerator"
+            android:label="Generator" />
+        <activity
+            android:name="com.twinone.locker.slidingFragments"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.keepy.saver.WebviewActivity"
+            android:label="Web" />
+        <activity
+            android:name="com.keepy.saver.googleview"
+            android:hardwareAccelerated="true"
+            android:label="Google" />
+        <activity
+            android:name="com.keepy.saver.facebookview"
+            android:hardwareAccelerated="true"
+            android:label="Facebook" />
+        <activity
+            android:name="com.keepy.saver.TwitterView"
+            android:hardwareAccelerated="true"
+            android:label="Twitter" />
+        <activity
+            android:name="com.keepy.saver.instagramView"
+            android:hardwareAccelerated="true"
+            android:label="Instagram" />
+        <activity
+            android:name="com.keepy.saver.tumblrView"
+            android:hardwareAccelerated="true"
+            android:label="Tumblr" />
+        <activity
+            android:name="com.keepy.saver.redditView"
+            android:hardwareAccelerated="true"
+            android:label="Reddit" />
+        <activity
+            android:name="com.keepy.saver.pinterestView"
+            android:hardwareAccelerated="true"
+            android:label="Pinterest" />
+        <activity
+            android:name="com.keepy.saver.quoraView"
+            android:hardwareAccelerated="true"
+            android:label="Quora" />
+        <activity android:name="com.keepy.saver.PinActivity"
+android:theme="@style/forpasswordsyles"
+            android:label="Keepy"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+
+
+
+
+
+
+
+
+        <activity
+            android:name="jonas.tool.saveForOffline.MainActivity"
+            android:label="Offline"
+            android:icon="@drawable/down"
+            android:theme="@style/Theme.Theme_main_yellow"
+            android:configChanges="orientation|screenSize">
+
+        </activity>
+        <activity
+            android:name="jonas.tool.saveForOffline.AddActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="jonas.tool.saveForOffline.ViewActivity"
+            android:parentActivityName="jonas.tool.saveForOffline.MainActivity"
+            android:theme="@style/Theme.Theme_main_yellow"
+            android:configChanges="orientation|screenSize">
+        </activity>
+
+        <activity
+            android:name="jonas.tool.saveForOffline.Preferences"
+            android:theme="@style/Theme.Theme_main_yellow"
+            android:parentActivityName="jonas.tool.saveForOffline.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="jonas.tool.saveForOffline.SaveService" />
+        <service android:name="jonas.tool.saveForOffline.ScreenshotService" />
+
+
+    </application>
+
+</manifest>

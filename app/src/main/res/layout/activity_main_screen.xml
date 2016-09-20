@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixelate="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:id="@+id/DashboardNewPost4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                >
+                <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:src="@drawable/google"
+                    android:onClick="google"
+                    pixelate:density="50"
+                    android:scaleType="centerCrop"
+                    />
+
+
+                <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:onClick="twitter"
+
+                    android:background="#fff"
+                    android:src="@drawable/twitter"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/DashboardPostsList3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                >
+                <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:onClick="facebook"
+
+
+
+
+                    android:src="@drawable/facebook"
+                    />
+
+                <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:onClick="linkedin"
+
+
+                    android:src="@drawable/linkedin"
+                    />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:id="@+id/DashboardNewPost2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+android:scaleType="centerCrop"
+                    app:bootstrapBrand="info"
+                    android:onClick="microsoft"
+                    android:src="@drawable/windows"
+                    />
+
+                <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:bootstrapBrand="info"
+
+                    android:onClick="instagram"
+                    android:src="@drawable/instagram"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/DashboardPostsList1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                >
+                <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    app:bootstrapBrand="info"
+                    android:scaleType="centerCrop"
+                    android:onClick="pinterest"
+                    android:src="@drawable/pinterest"
+                    />
+
+                <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    app:bootstrapBrand="info"
+                    android:scaleType="centerCrop"
+                    android:onClick="reddit"
+
+                    android:src="@drawable/reddit"
+                    />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

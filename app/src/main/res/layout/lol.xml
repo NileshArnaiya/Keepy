@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:id="@+id/DashboardNewPost4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:src="@drawable/yehbanega"
+                    app:bootstrapBrand="info"
+                    android:onClick="SocialMediaAccounts"
+
+                    app:hasBorder="true"
+
+                    />
+
+                <com.beardedhen.androidbootstrap.AwesomeTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:bootstrapBrand="danger"
+                    app:bootstrapHeading="h2"
+
+                    android:textSize="28sp"
+                    app:roundedCorners="true"
+                    android:text="Social"
+
+
+
+
+
+
+
+                    />
+
+
+
+
+
+
+
+                <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:src="@drawable/bankicon2"
+                    android:layout_marginTop="5dp"
+                    app:bootstrapBrand="info"
+                    android:onClick="SaveBankAccounts"
+                    android:scaleType="centerCrop"
+                    app:hasBorder="true"
+                    />
+                <com.beardedhen.androidbootstrap.AwesomeTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:bootstrapBrand="danger"
+                    app:bootstrapHeading="h2"
+
+                    android:textSize="28sp"
+                    app:roundedCorners="true"
+                    android:text="Bank"
+                    />
+
+
+
+
+
+
+
+
+                <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+
+                    android:onClick="SaveNotes"
+                    android:src="@drawable/journal"
+                    app:bootstrapBrand="primary"
+                    app:hasBorder="true"
+                    />
+                <com.beardedhen.androidbootstrap.AwesomeTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:bootstrapBrand="danger"
+                    android:textSize="28sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:bootstrapHeading="h2"
+                    app:roundedCorners="true"
+                    android:text="Notes"
+                    />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/DashboardPostsList3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:onClick="webview"
+                    android:src="@drawable/browsericon"
+                    />
+                <com.beardedhen.androidbootstrap.AwesomeTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:bootstrapBrand="danger"
+                    app:bootstrapHeading="h2"
+                    app:roundedCorners="true"
+                    android:textSize="28sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Web"
+
+
+
+
+
+
+
+                    />
+
+
+                <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:src="@drawable/downloadicaa"
+                    android:onClick="offline"
+                    app:bootstrapBrand="primary"
+
+                    app:hasBorder="true"
+                    />
+                <com.beardedhen.androidbootstrap.AwesomeTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:bootstrapBrand="danger"
+                    app:bootstrapHeading="h2"
+                    app:roundedCorners="true"
+                    android:textSize="28sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Offline"
+
+                    />
+
+                <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:onClick="passwordActivity"
+                    android:src="@drawable/passgenerator"
+                    />
+                <com.beardedhen.androidbootstrap.AwesomeTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:bootstrapBrand="danger"
+                    app:bootstrapHeading="h2"
+                    app:roundedCorners="true"
+                    android:textSize="28sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Generator"
+
+
+
+
+
+
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "56842475496",
+    "firebase_url": "https://admob-app-id-4846654397.firebaseio.com",
+    "project_id": "admob-app-id-4846654397",
+    "storage_bucket": "admob-app-id-4846654397.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56842475496:android:3553d62439d65fd4",
+        "android_client_info": {
+          "package_name": "org.twinone.locker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56842475496-2sva2jn4hlo6mhcjv819u6l2413j951h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl6X3JSk3yfl3SrFBOAdC8pQZHzR_m79Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

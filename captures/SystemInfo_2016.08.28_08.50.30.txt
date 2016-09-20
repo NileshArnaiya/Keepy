@@ -1,0 +1,32 @@
+Applications Memory Usage (kB):
+Uptime: 88850660 Realtime: 211911367
+
+** MEMINFO in pid 2972 [com.keepy.saver] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap        0        0        0        0    16072     5554      385
+  Dalvik Heap    39255    39080        0        0    47408    44892     2516
+ Dalvik Other     2224     2164        0        0                           
+        Stack       80       80        0        0                           
+    Other dev     3976     1500       76        0                           
+     .so mmap     1236      840       40        0                           
+    .apk mmap      444        0      180        0                           
+    .ttf mmap      123        0       92        0                           
+    .dex mmap     3366       48     2968        0                           
+   Other mmap        5        4        0        0                           
+      Unknown     2898     2896        0        0                           
+        TOTAL    53607    46612     3356        0    63480    50446     2901
+ 
+ Objects
+               Views:       99         ViewRootImpl:        4
+         AppContexts:        6           Activities:        3
+              Assets:        2        AssetManagers:        2
+       Local Binders:       13        Proxy Binders:       28
+    Death Recipients:        0
+     OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:        0
+ 
